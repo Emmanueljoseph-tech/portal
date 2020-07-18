@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:gravity="center"
-        android:text="Sign in"
+        android:text="@string/sign_in"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -44,10 +44,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
-                android:hint="joe123@yahoo.com"
+                android:hint="@string/joe123_yahoo_com"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="15dp"
-                android:paddingRight="15dp" />
+                android:paddingRight="15dp"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -60,10 +61,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
-                android:hint="******"
+                android:hint="@string/password"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="15dp"
-                android:paddingRight="15dp" />
+                android:paddingRight="15dp"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -72,7 +74,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/background"
-            android:text="login"
+            android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="20sp"
@@ -81,7 +83,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="forgotten password?"
+            android:text="@string/forgotten_password"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
             android:textSize="14sp"
