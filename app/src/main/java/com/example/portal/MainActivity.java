@@ -9,18 +9,20 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements PortalJava {
+public class MainActivity<Button> extends AppCompatActivity implements PortalJava {
     private EditText etEmail, etPassword;
-    private Button btnLogin;
+    private ButtonbtnLogin;
     private TextView tvForgot;
+
+    private String email, password;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        private final String email, password;
 
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
@@ -42,7 +44,11 @@ public class MainActivity extends AppCompatActivity implements PortalJava {
     private void validate() {
         if(email.isEmpty){
             etEmail.setError("Email cannot be empty");
-        }else is(password.isEmpty)
+        }else if(password.isEmpty() || password.length() < 4){
+            etPassword.setError("Password cannot be empty or less than 4");
+        } else {
+            Tosst.makeText(getApplicationContext(), text "credentials successfully entered", Tosst.LENGTH_LONG).show();
+        }
     }
 
 }
